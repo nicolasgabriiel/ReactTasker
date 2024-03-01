@@ -14,12 +14,21 @@ const EstiloGlobal = createGlobalStyle`
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 224px auto;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-itens: center;
+  }
 `
 
 export const MainContainer = styled.main`
   padding: 0 40px;
   height: 100vh;
   overflow-y: scroll;
+  @media (max-width: 768px) {
+    overflow: hidden;
+    height: auto;
+  }
 `
 
 export const Titulo = styled.h2`
