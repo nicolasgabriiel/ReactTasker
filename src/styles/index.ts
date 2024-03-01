@@ -50,10 +50,18 @@ export const Botao = styled.button`
   background-color: ${variaveis.azulEscuro};
   border-radius: 8px;
   margin-right: 8px;
+  transition: 0.3s;
+  &:hover {
+    background-color: ${variaveis.azulEscuroHover};
+  }
 `
 
 export const BotaoSalvar = styled(Botao)`
   background-color: ${variaveis.verde};
+  transition: 0.3s;
+  &:hover {
+    background-color: ${variaveis.verdeHover};
+  }
 `
 
 export default EstiloGlobal

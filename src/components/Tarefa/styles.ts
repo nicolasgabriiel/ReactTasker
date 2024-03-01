@@ -75,4 +75,8 @@ export const BarraAcoes = styled.div`
 
 export const BotaoCancelarRemover = styled(Botao)`
   background-color: ${variaveis.vermelho};
+  transition: 0.3s;
+  &:hover {
+    background-color: ${variaveis.vermelhoHover};
+  }
 `
